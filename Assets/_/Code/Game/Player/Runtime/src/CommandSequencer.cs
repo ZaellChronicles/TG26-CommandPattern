@@ -43,6 +43,7 @@ namespace Player.Runtime
 
             ICommand command = _commands[0];
             _commands.RemoveAt(0);
+            RefreshText();
             command.Execute();
         }
 
