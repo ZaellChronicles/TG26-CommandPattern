@@ -131,8 +131,8 @@ namespace Player.Runtime
 
         [Header("- References -")]
         [SerializeField] private PathGraph _pathGraph;
-        [SerializeField] private List<Button> _buttons;
         [SerializeField] private TMP_Text _commandListText;
+        [SerializeField] private List<Button> _buttons;
 
         private PlayerController _player;
         private List<ICommand> _commands = new();

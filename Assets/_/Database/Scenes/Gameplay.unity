@@ -2560,7 +2560,7 @@ GameObject:
   - component: {fileID: 1776161200}
   - component: {fileID: 1776161199}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextCommands
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2605,7 +2605,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3361,13 +3361,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Player.Runtime::Player.Runtime.CommandSequencer
   _pathGraph: {fileID: 1648176261}
+  _commandListText: {fileID: 1776161199}
   _buttons:
   - {fileID: 1932606755}
   - {fileID: 1986315532}
   - {fileID: 155733910}
   - {fileID: 710575390}
   - {fileID: 2034949484}
-  _commandListText: {fileID: 1055056945}
 --- !u!114 &1975036333
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -141,9 +141,9 @@ namespace Player.Runtime
         private Checkpoint _targetCheckpoint;
         private Quaternion _targetRotation;
         private float _pauseTimer;
-        private State _state = State.Idle;
 
         private enum State { Idle, Moving, Rotating, Pausing }
+        private State _state = State.Idle;
 
         #endregion
     }
