@@ -1,0 +1,9 @@
+{
+    "name": "Particle.Runtime",
+    "rootNamespace": "Particle.Runtime",
+    "references": [
+        "Core.Runtime",
+        "Player.Runtime"
+    ],
+    "autoReferenced": true
+}

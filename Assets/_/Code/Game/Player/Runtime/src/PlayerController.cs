@@ -19,6 +19,7 @@ namespace Player.Runtime
 
         public event Action OnTeleportedToStart;
         public event Action OnDestinationReached;
+        public event Action OnDestinationLeft;
 
         #endregion
 
@@ -72,6 +73,7 @@ namespace Player.Runtime
             _myTransform.rotation = Quaternion.identity;
             _state = State.Idle;
             OnTeleportedToStart?.Invoke();
+            OnDestinationLeft?.Invoke();
         }
 
         #endregion
@@ -81,6 +83,8 @@ namespace Player.Runtime
 
         private void UpdateMoving()
         {
+            OnDestinationLeft?.Invoke();
+
             Vector3 targetPosition = _targetCheckpoint.transform.position;
             _myTransform.position = Vector3.MoveTowards(_myTransform.position, targetPosition, _moveSpeed * Time.deltaTime);
 

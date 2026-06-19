@@ -4,11 +4,18 @@ using Path.Runtime;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 namespace Player.Runtime
 {
     public class CommandSequencer : TCBehaviour
     {
+        #region Events
+
+        public event Action OnDestinationFinalReached;
+
+        #endregion
+
         #region Unity API
 
         protected override void Awake()
@@ -99,6 +106,7 @@ namespace Player.Runtime
         private void OnDestinationReached()
         {
             Log("Victory !");
+            OnDestinationFinalReached?.Invoke();
             ResetSequence();
             RefreshText();
         }
@@ -120,7 +128,8 @@ namespace Player.Runtime
 
             System.Text.StringBuilder sb = new();
             for (int i = 0; i < _commands.Count; i++)
-                sb.AppendLine($"{i + 1}. {_commands[i].Label}");
+                sb.AppendLine($"{_commands[i].Label}");
+                // sb.AppendLine($"{i + 1}. {_commands[i].Label}");
 
             _commandListText.text = sb.ToString();
         }

@@ -3,5 +3,6 @@
   <Project Path="Core.Runtime.csproj" />
   <Project Path="FeatureCreator.Editor.csproj" />
   <Project Path="Player.Runtime.csproj" />
+  <Project Path="Particle.Runtime.csproj" />
   <Project Path="Path.Runtime.csproj" />
 </Solution>
