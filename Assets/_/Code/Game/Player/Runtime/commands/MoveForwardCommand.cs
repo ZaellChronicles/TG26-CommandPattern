@@ -7,6 +7,8 @@ namespace Player.Runtime
     {
         #region Publics
 
+        public string Label => "Move Forward";
+
         public MoveForwardCommand(PlayerController player, PathGraph pathGraph)
         {
             _player = player;

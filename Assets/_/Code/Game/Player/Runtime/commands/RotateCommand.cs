@@ -6,6 +6,8 @@ namespace Player.Runtime
     {
         #region Publics
 
+        public string Label => _angle > 0 ? "Rotate Right" : "Rotate Left";
+
         public RotateCommand(PlayerController player, float angle)
         {
             _player = player;

@@ -29,8 +29,7 @@ namespace Player.Runtime
         {
             base.Awake();
 
-            _currentCheckpoint = _startCheckpoint;
-            _myTransform.position = _startCheckpoint.transform.position;
+            TeleportToStart();
         }
 
         private void Update()
