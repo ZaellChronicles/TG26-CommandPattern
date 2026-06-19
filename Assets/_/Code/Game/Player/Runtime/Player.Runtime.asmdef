@@ -1,0 +1,17 @@
+{
+    "name": "Player.Runtime",
+    "rootNamespace": "Player.Runtime",
+    "references": [
+        "Core.Runtime",
+        "Path.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

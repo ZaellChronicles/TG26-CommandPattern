@@ -1,0 +1,9 @@
+{
+    "name": "Core.Editor",
+    "includePlatforms": ["Editor"],
+    "rootNamespace": "Core.Editor",
+    "references": [
+        "Core.Runtime"
+    ],
+    "autoReferenced": true
+}

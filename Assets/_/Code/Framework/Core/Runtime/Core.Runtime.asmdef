@@ -1,0 +1,6 @@
+{
+    "name": "Core.Runtime",
+    "rootNamespace": "Core.Runtime",
+    "references": [],
+    "autoReferenced": true
+}
